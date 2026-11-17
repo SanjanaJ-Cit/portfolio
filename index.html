@@ -1,655 +1,72 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4f6ff" />
+    <meta name="description" content="Sanjana J — software developer portfolio and CV." />
+    <title>Sanjana J — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell" id="home">
+      <header class="topbar">
+        <a class="brand" href="#home">Sanjana J<span>.</span></a>
+        <nav aria-label="Main navigation"><a href="#about">Bio</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
+        <div class="header-actions"><button class="icon-button" id="theme-toggle" aria-label="Switch to dark mode" title="Toggle color theme">☾</button><button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button></div>
+      </header>
 
-    <meta name="description" content="Sanjana J - B.Tech Artificial Intelligence and Data Science student, aspiring AI and ML Engineer. Explore my projects, skills and achievements.">
-
-    <meta name="author" content="Sanjana J">
-
-    <title>Sanjana J | AI & Data Science Portfolio</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="./styles.css">
-</head>
-
-<body>
-
-<div class="site-shell">
-
-    <!-- HEADER -->
-    <header class="topbar">
-
-        <a href="#about" class="brand">
-            SANJANA<span>.</span>
-        </a>
-
-        <nav>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
-
-        <div class="header-actions">
-            <button class="icon-button"
-                    id="theme-toggle"
-                    aria-label="Switch to dark mode"
-                    type="button">☾</button>
-
-            <button class="menu-toggle"
-                    id="menu-toggle"
-                    aria-label="Open navigation"
-                    aria-expanded="false"
-                    type="button">☰</button>
-        </div>
-
-    </header>
-
-
-    <!-- MAIN LAYOUT -->
-    <div class="layout">
-
-        <!-- PROFILE SIDEBAR -->
-        <aside class="profile">
-
-            <div class="avatar">
-                <span>SJ</span>
-                <i>✦</i>
-            </div>
-
-            <h1>Sanjana J</h1>
-
-            <p class="role">AI & Data Science Student</p>
-
-            <p class="location">
-                <span>●</span> Chennai, Tamil Nadu, India
-            </p>
-
-            <a href="./Sanjana-J-Resume.pdf"
-               class="download"
-               download>
-                <span>↓</span> Download Resume
-            </a>
-
-            <div class="profile-rule"></div>
-
-            <p class="profile-note">
-                Exploring Artificial Intelligence, Machine Learning
-                and Data Science to build meaningful solutions
-                through technology.
-            </p>
-
-            <div class="socials">
-
-                <a href="https://github.com/SanjanaJ-Cit"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="GitHub">G</a>
-
-                <!-- Replace # with your LinkedIn profile URL -->
-                <a href="#"
-                   aria-label="LinkedIn">in</a>
-
-                <a href="mailto:YOUR_EMAIL@example.com"
-                   aria-label="Email">@</a>
-
-            </div>
-
-            <div class="availability">
-                <span></span>
-                OPEN TO LEARNING & OPPORTUNITIES
-            </div>
-
+      <main class="layout">
+        <aside class="profile" aria-label="Profile">
+          <div class="avatar" aria-hidden="true"><span>SJ</span><i>✳</i></div>
+          <h1>Sanjana J</h1>
+          <p class="role">Software Developer</p>
+          <p class="location"><span>⌖</span> India</p>
+          <a class="download" href="Sanjana-J-Resume.pdf" download><span>↧</span> Download CV</a>
+          <div class="profile-rule"></div>
+          <p class="profile-note">Curious about technology, thoughtful problem solving, and building useful things.</p>
+          <div class="socials" aria-label="Contact"><a href="#contact" aria-label="Contact">@</a><a href="#skills" aria-label="Skills">⌘</a></div>
+          <div class="availability"><span></span> OPEN TO OPPORTUNITIES</div>
         </aside>
 
-
-        <!-- MAIN CONTENT -->
-        <main class="content">
-
-
-            <!-- ABOUT SECTION -->
-            <section class="section-block" id="about">
-
-                <div class="section-title">
-                    <span class="title-icon">✦</span>
-                    <h2>About Me</h2>
-                </div>
-
-                <p class="summary">
-                    I'm Sanjana J, a second-year B.Tech Artificial
-                    Intelligence and Data Science student with a
-                    strong interest in Artificial Intelligence,
-                    Machine Learning and intelligent applications.
-
-                    I enjoy transforming ideas into practical
-                    technology solutions, exploring emerging AI
-                    tools and working on projects that combine
-                    data, algorithms and real-world applications.
-
-                    My goal is to grow as an AI/ML Engineer while
-                    continuously strengthening my technical
-                    knowledge through projects, internships,
-                    research and hackathons.
-                </p>
-
-                <div class="quick-facts">
-
-                    <div>
-                        <span class="fact-label">DEGREE</span>
-                        <strong>B.Tech AI & DS</strong>
-                    </div>
-
-                    <div>
-                        <span class="fact-label">CURRENT YEAR</span>
-                        <strong>Second Year</strong>
-                    </div>
-
-                    <div>
-                        <span class="fact-label">CAREER GOAL</span>
-                        <strong>AI / ML Engineer</strong>
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- EDUCATION SECTION -->
-            <section class="section-block" id="education">
-
-                <div class="section-title">
-                    <span class="title-icon">🎓</span>
-                    <h2>Education</h2>
-                </div>
-
-                <div class="info-card">
-
-                    <div class="education-mark">B</div>
-
-                    <div>
-                        <h3>Bachelor of Technology</h3>
-                        <p>Artificial Intelligence and Data Science</p>
-                        <p>Currently pursuing | Second Year</p>
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- SKILLS SECTION -->
-            <section class="section-block" id="skills">
-
-                <div class="section-title">
-                    <span class="title-icon">⌘</span>
-                    <h2>Technical Skills</h2>
-                </div>
-
-                <p class="summary">
-                    Technologies, programming languages and tools
-                    I work with and continue to explore.
-                </p>
-
-                <div class="skill-grid">
-
-                    <div class="skill-card">
-                        <span class="card-symbol">01 / CODE</span>
-                        <h3>Programming Languages</h3>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>SQL</span>
-                            <span>C</span>
-                            <span>C++</span>
-                            <span>Java</span>
-                            <span>TypeScript</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                        </div>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <span class="card-symbol">02 / AI</span>
-                        <h3>Artificial Intelligence</h3>
-                        <div class="tags">
-                            <span>Machine Learning</span>
-                            <span>Deep Learning</span>
-                            <span>NLP</span>
-                            <span>Generative AI</span>
-                            <span>Multimodal AI</span>
-                        </div>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <span class="card-symbol">03 / DATA</span>
-                        <h3>Data Science & Analytics</h3>
-                        <div class="tags">
-                            <span>Pandas</span>
-                            <span>NumPy</span>
-                            <span>EDA</span>
-                            <span>Preprocessing</span>
-                            <span>Visualization</span>
-                        </div>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <span class="card-symbol">04 / TOOLS</span>
-                        <h3>Development Tools</h3>
-                        <div class="tags">
-                            <span>VS Code</span>
-                            <span>Jupyter</span>
-                            <span>Google Colab</span>
-                            <span>Git</span>
-                            <span>GitHub</span>
-                        </div>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <span class="card-symbol">05 / WEB</span>
-                        <h3>Web & API Development</h3>
-                        <div class="tags">
-                            <span>API Integration</span>
-                            <span>Flask</span>
-                            <span>REST APIs</span>
-                            <span>TypeScript</span>
-                        </div>
-                    </div>
-
-
-                    <div class="skill-card">
-                        <span class="card-symbol">06 / DATABASE</span>
-                        <h3>Database Technologies</h3>
-                        <div class="tags">
-                            <span>SQL</span>
-                            <span>MongoDB</span>
-                            <span>SQLite</span>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- PROJECTS SECTION -->
-            <section class="section-block" id="projects">
-
-                <div class="section-title">
-                    <span class="title-icon">▣</span>
-                    <h2>Featured Projects</h2>
-                </div>
-
-                <p class="summary">
-                    A selection of projects where I apply
-                    programming, AI and data science to
-                    solve practical problems.
-                </p>
-
-                <div class="project-list">
-
-
-                    <!-- PROJECT 1 -->
-                    <article class="project-card">
-
-                        <div class="project-top">
-                            <span class="project-number">01</span>
-                            <span class="project-type">MULTIMODAL AI</span>
-                        </div>
-
-                        <h3>EmotiSense AI</h3>
-
-                        <p>
-                            A multimodal emotion and sentiment analysis
-                            system that analyses text, audio, images
-                            and video to identify emotional patterns,
-                            detect potential risks and generate
-                            confidence-based insights.
-
-                            Integrated Gemini 2.5 Flash API with
-                            NLP-based analysis and validation.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Gemini 2.5 Flash</span>
-                            <span>AI</span>
-                            <span>NLP</span>
-                            <span>Multimodal Analysis</span>
-                            <span>TypeScript</span>
-                        </div>
-
-                        <div style="margin-top:12px;">
-                            <a href="https://github.com/SanjanaJ-Cit/multimodal-sentimental-analysis"
-                               target="_blank"
-                               rel="noopener noreferrer"
-                               style="font-size:10px;color:var(--accent);font-weight:700;">
-                                View GitHub Project →
-                            </a>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJECT 2 -->
-                    <article class="project-card">
-
-                        <div class="project-top">
-                            <span class="project-number">02</span>
-                            <span class="project-type">DATA SCIENCE & ML</span>
-                        </div>
-
-                        <h3>MediCostAI – AI-Powered Health Insurance Platform</h3>
-
-                        <p>
-                            An intelligent health insurance platform
-                            designed to predict insurance costs and
-                            provide transparent premium explanations.
-
-                            Implemented a Random Forest regression
-                            model with explainable AI concepts,
-                            feature attribution and scenario simulation
-                            to help users understand the factors
-                            influencing their premiums.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Python</span>
-                            <span>Machine Learning</span>
-                            <span>Random Forest</span>
-                            <span>SHAP</span>
-                            <span>Data Visualization</span>
-                            <span>Flask</span>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJECT 3 -->
-                    <article class="project-card">
-
-                        <div class="project-top">
-                            <span class="project-number">03</span>
-                            <span class="project-type">WEB DEVELOPMENT</span>
-                        </div>
-
-                        <h3>JS ENTERPRISES – Export Business Website</h3>
-
-                        <p>
-                            A responsive business website designed
-                            to showcase an export company's products,
-                            services, credentials and international
-                            business enquiries through a modern
-                            digital presence.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>React</span>
-                            <span>TypeScript</span>
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJECT 4 -->
-                    <article class="project-card">
-
-                        <div class="project-top">
-                            <span class="project-number">04</span>
-                            <span class="project-type">HACKATHON CONCEPT</span>
-                        </div>
-
-                        <h3>Waste2Wealth AI</h3>
-
-                        <p>
-                            An AI-driven concept focused on identifying
-                            alternative uses and second-life
-                            opportunities for different types of waste,
-                            supporting sustainable resource utilization
-                            and circular economy practices.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Artificial Intelligence</span>
-                            <span>Machine Learning</span>
-                            <span>Sustainability</span>
-                            <span>Problem Solving</span>
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </section>
-
-
-            <!-- EXPERIENCE SECTION -->
-            <section class="section-block" id="experience">
-
-                <div class="section-title">
-                    <span class="title-icon">✧</span>
-                    <h2>Internships & Experience</h2>
-                </div>
-
-
-                <div class="project-list">
-
-                    <article class="project-card">
-
-                        <div class="project-top">
-                            <span class="project-number">01</span>
-                            <span class="project-type">AI INTERNSHIP</span>
-                        </div>
-
-                        <h3>CIT CoE – Artificial Intelligence Internship</h3>
-
-                        <p>
-                            Completed a 40-day AI internship and
-                            developed EmotiSense AI, a multimodal
-                            emotion and sentiment analysis project.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>Artificial Intelligence</span>
-                            <span>Gemini API</span>
-                            <span>Multimodal AI</span>
-                        </div>
-
-                    </article>
-
-
-                    <article class="project-card">
-
-                        <div class="project-top">
-                            <span class="project-number">02</span>
-                            <span class="project-type">VIRTUAL INTERNSHIP</span>
-                        </div>
-
-                        <h3>Cisco AICTE Virtual Internship</h3>
-
-                        <p>
-                            Participated in the Cisco AICTE virtual
-                            internship programme and explored
-                            technical learning opportunities.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </section>
-
-
-            <!-- CERTIFICATIONS SECTION -->
-            <section class="section-block" id="certifications">
-
-                <div class="section-title">
-                    <span class="title-icon">🏅</span>
-                    <h2>Certifications & Learning</h2>
-                </div>
-
-                <div class="project-list">
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-number">01</span>
-                            <span class="project-type">CISCO</span>
-                        </div>
-                        <h3>Python Essentials – Level 1 & Level 2</h3>
-                        <p>Programming fundamentals and Python development.</p>
-                    </article>
-
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-number">02</span>
-                            <span class="project-type">AWS</span>
-                        </div>
-                        <h3>AWS Generative AI</h3>
-                        <p>Learning concepts and applications of Generative AI.</p>
-                    </article>
-
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-number">03</span>
-                            <span class="project-type">FITA ACADEMY</span>
-                        </div>
-                        <h3>Advanced Java</h3>
-                        <p>Advanced Java programming concepts.</p>
-                    </article>
-
-
-                    <article class="project-card">
-                        <div class="project-top">
-                            <span class="project-number">04</span>
-                            <span class="project-type">MONGODB</span>
-                        </div>
-                        <h3>MongoDB Certification – Datathon</h3>
-                        <p>Database technologies and MongoDB concepts.</p>
-                    </article>
-
-                </div>
-
-            </section>
-
-
-            <!-- ACHIEVEMENTS SECTION -->
-            <section class="section-block" id="achievements">
-
-                <div class="section-title">
-                    <span class="title-icon">🏆</span>
-                    <h2>Achievements & Activities</h2>
-                </div>
-
-                <div class="info-card">
-
-                    <div class="education-mark">20</div>
-
-                    <div>
-                        <h3>X4 / x402 Global Challenge</h3>
-                        <p>
-                            Selected among the Top 20 teams at
-                            Startup Park, Bangalore.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="info-card" style="margin-top:10px;">
-
-                    <div class="education-mark">CV</div>
-
-                    <div>
-                        <h3>CV Hackathon 2026</h3>
-                        <p>
-                            Participated in a computer vision
-                            hackathon focused on highway
-                            accident detection.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div class="info-card" style="margin-top:10px;">
-
-                    <div class="education-mark">LC</div>
-
-                    <div>
-                        <h3>LeetCode</h3>
-                        <p>
-                            Competitive programming and
-                            algorithmic problem-solving practice.
-                        </p>
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- CONTACT SECTION -->
-            <section class="section-block" id="contact">
-
-                <div class="contact-card">
-
-                    <div>
-                        <h2>Let's Connect!</h2>
-
-                        <p>
-                            Interested in AI, ML, research,
-                            internships or collaboration?
-                            Let's connect and build something meaningful.
-                        </p>
-                    </div>
-
-                    <a href="mailto:YOUR_EMAIL@example.com"
-                       class="contact-link">
-                        Get In Touch <span>↗</span>
-                    </a>
-
-                    <div class="contact-decoration">✦</div>
-
-                </div>
-
-            </section>
-
-
-        </main>
-
+        <div class="content">
+          <section class="intro section-block" id="about">
+            <div class="section-title"><span class="title-icon">✳</span><h2>Professional Summary</h2></div>
+            <p class="summary">I’m Sanjana, a software developer with a foundation in programming, web technologies, and databases. I enjoy learning how systems work, breaking down problems, and creating clear, practical solutions. I’m continuing to grow my skills through hands-on work and new challenges.</p>
+            <div class="quick-facts"><div><span class="fact-label">FOCUS</span><strong>Software development</strong></div><div><span class="fact-label">TOOLKIT</span><strong>7 core technologies</strong></div><div><span class="fact-label">BASED IN</span><strong>India</strong></div></div>
+          </section>
+
+          <section class="section-block" id="education">
+            <div class="section-title"><span class="title-icon">⌂</span><h2>Education</h2></div>
+            <div class="info-card education-card"><div class="education-mark">S</div><div><h3>Education details</h3><p>See my CV for education and academic details.</p></div><a href="Sanjana-J-Resume.pdf" download aria-label="Download CV for education details">↗</a></div>
+          </section>
+
+          <section class="section-block" id="skills">
+            <div class="section-title"><span class="title-icon">⌘</span><h2>Skills &amp; Technologies</h2></div>
+            <div class="skill-grid">
+              <article class="skill-card"><span class="card-symbol">{ }</span><h3>Programming</h3><div class="tags"><span>Python</span><span>Java</span><span>C++</span><span>C</span></div></article>
+              <article class="skill-card"><span class="card-symbol">&lt;/&gt;</span><h3>Web Development</h3><div class="tags"><span>HTML</span><span>CSS</span><span>TypeScript</span></div></article>
+              <article class="skill-card"><span class="card-symbol">▤</span><h3>Database</h3><div class="tags"><span>SQL</span></div></article>
+            </div>
+          </section>
+
+          <section class="section-block project-block" id="projects">
+            <div class="section-title"><span class="title-icon">✦</span><h2>Selected Work</h2></div>
+            <div class="project-list">
+              <article class="project-card"><div class="project-top"><span class="project-number">01</span><span class="project-type">MULTIMODAL AI</span></div><h3>EmotiSense AI</h3><p>Analyzes text, images, audio, and video to identify eight primary emotions. Includes confidence scoring and risk classification for moderation scenarios.</p><div class="project-tags"><span>Python</span><span>Gemini 2.5 Flash</span><span>NLP</span></div></article>
+              <article class="project-card"><div class="project-top"><span class="project-number">02</span><span class="project-type">MACHINE LEARNING</span></div><h3>MediCost AI</h3><p>Predicts medical insurance costs with an interpretable regression model. Test results reported in the resume: R² 0.955, MAE 2,421.82, RMSE 3,027.42.</p><div class="project-tags"><span>Python</span><span>Scikit-learn</span><span>Explainable AI</span></div></article>
+              <article class="project-card"><div class="project-top"><span class="project-number">03</span><span class="project-type">DATA &amp; PREDICTION</span></div><h3>AquaGuard</h3><p>End-to-end water-quality prediction pipeline, from data exploration and feature engineering to model comparison and an interpretable real-time prediction interface.</p><div class="project-tags"><span>Python</span><span>Scikit-learn</span><span>Data analysis</span></div></article>
+            </div>
+          </section>
+
+          <section class="contact-card" id="contact"><div><span class="fact-label">LET’S CONNECT</span><h2>Have an opportunity or idea?</h2><p>I’d be happy to hear from you.</p></div><a href="Sanjana-J-Resume.pdf" download class="contact-link">View my CV <span>↗</span></a><div class="contact-decoration" aria-hidden="true">✳</div></section>
+        </div>
+      </main>
+      <footer><span>© <span id="year"></span> Sanjana J</span><a href="#home">BACK TO TOP ↑</a></footer>
     </div>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <span>
-            © <span id="year"></span> Sanjana J. All Rights Reserved.
-        </span>
-
-        <a href="#about">BACK TO TOP ↑</a>
-
-    </footer>
-
-</div>
-
-
-<!-- JAVASCRIPT -->
-<script src="./script.js"></script>
-
-</body>
+  </body>
 </html>
